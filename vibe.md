@@ -5,7 +5,7 @@ permalink: /vibe/
 ---
 
 
-## ViBe
+
 *Like Vikram with Betaal at every stride,*
 *ViBe questions you—till trust and confidence walk by your side.*
 

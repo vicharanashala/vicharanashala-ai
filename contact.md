@@ -4,7 +4,7 @@ title: Contact
 permalink: /contact/
 ---
 
-## Contact
+
 
 ### Address
 VLED, Super Academic Block  
