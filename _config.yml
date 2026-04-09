@@ -12,6 +12,7 @@ header_pages:
   - research-blog.md
   - initiatives.md
   - contact.md
+  - vibe.md
 
 plugins:
   - jekyll-feed
