@@ -6,13 +6,20 @@ url: "https://vicharanashala.github.io"
 baseurl: "/vicharanashala-ai"
 
 header_pages:
-  - index.md
   - ourstory.md
-  - vichara_log.md
-  - research-blog.md
-  - initiatives.md
-  - contact.md
+  - research.md
+  - vichara_logs.md
+  - lab_initiatives.md
+  - national_initiatives.md
   - vibe.md
+  - spandan.md
+  - vi-slides.md
+  - pes.md
+  - hp-dashboard-lti.md
+  - Vi-Notes.md
+  - contact.md
+  - team-members.
+  - Vi-Sakha.md
 
 plugins:
   - jekyll-feed

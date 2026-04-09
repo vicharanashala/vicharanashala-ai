@@ -14,8 +14,7 @@ permalink: /vichara_logs/
 
 Short, reflective pieces that engage with current ideas, trends, and experiences shaping our world. Each article is intentionally written without the use of AI, preserving the authenticity of human thought and voice. These 500-word explorations aim to provoke thinking rather than conclude it.
 
-**Read the articles here:**  
-https://vicharanashala.github.io/vled/
+**Read the articles here:**  [Vi-Chintan](https://vicharanashala.github.io/vled/){:target="_blank"}
 
 ---
 

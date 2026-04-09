@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Spandan - AI-Powered Real-Time Engagement Automation System
+title: Spandan
+page_title: Spandan - AI-Powered Real-Time Engagement Automation System
+parent: Products
 permalink: /spandan/
 ---
 
