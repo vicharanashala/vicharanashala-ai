@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Vi-Sakha
+parent: Products
 permalink: /Vi-Sakha/
 ---
 

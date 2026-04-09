@@ -1,6 +1,7 @@
 ---
-layout: card-layout
-title: National Initiative
+layout: page
+title: National Initiatives
+parent: Initiatives
 permalink: /national_initiative/
 card_mode: generic
 ---
