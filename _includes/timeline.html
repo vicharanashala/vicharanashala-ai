@@ -6,25 +6,6 @@
 
   <div class="timeline">
     {% for event in page.timeline %}
-    {% if event.split %}
-    <div class="timeline-item">
-      <div class="timeline-marker timeline-marker--split">
-        <span class="timeline-icon">✦</span>
-      </div>
-      <div class="timeline-content">
-        <span class="timeline-month">{{ event.month }}</span>
-        <div class="timeline-split">
-          {% for sub in event.split %}
-          <div class="timeline-split-card">
-            <div class="split-card-icon">{{ sub.icon }}</div>
-            <h3 class="timeline-title">{{ sub.title }}</h3>
-            <p class="timeline-description">{{ sub.description }}</p>
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-    </div>
-    {% else %}
     <div class="timeline-item">
       <div class="timeline-marker">
         <span class="timeline-icon">{{ event.icon }}</span>
@@ -35,7 +16,6 @@
         <p class="timeline-description">{{ event.description }}</p>
       </div>
     </div>
-    {% endif %}
     {% endfor %}
   </div>
 </section>
@@ -137,51 +117,9 @@
     line-height: 1.6;
   }
 
-  /* Split / simultaneous events */
-  .timeline-marker--split {
-    background: #fff7f2;
-    border-color: #e07b39;
-  }
-
-  .timeline-split {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0;
-    margin-top: 0.5rem;
-    border: 1px solid #e8e0d5;
-    border-top: 3px solid #e07b39;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-
-  .timeline-split-card {
-    background: #faf8f5;
-    padding: 0.9rem 1rem;
-  }
-
-  .timeline-split-card + .timeline-split-card {
-    border-left: 1px solid #e8e0d5;
-  }
-
-  .split-card-icon {
-    font-size: 1.2rem;
-    margin-bottom: 0.35rem;
-    line-height: 1;
-  }
-
   @media (max-width: 600px) {
     .our-story {
       padding: 1.5rem 0.75rem;
-    }
-
-    .timeline-split {
-      grid-template-columns: 1fr;
-      border-top: 3px solid #e07b39;
-    }
-
-    .timeline-split-card + .timeline-split-card {
-      border-left: none;
-      border-top: 1px solid #e8e0d5;
     }
   }
 </style>
