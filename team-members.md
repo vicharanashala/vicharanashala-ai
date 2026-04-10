@@ -5,8 +5,12 @@ parent: Others
 permalink: /team-members/
 ---
 
-# Team Members
-
-This page will list the people behind the Vicharanashala projects and programs.
+- Dr. Sudarshan Iyengar
+- Meenakshi V
+- Prakash Hegade
+- Pavani Ayinampudi
+- Sakshi Sharma
+- Rohit Sharma
+- Jinal Gupta
 
 Profiles can be added here as the team page is expanded.

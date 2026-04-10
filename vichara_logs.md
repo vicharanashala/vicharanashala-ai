@@ -4,8 +4,11 @@ title: Vichara Logs
 permalink: /vichara_logs/
 ---
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> b5b015b7f2fc418e163a8e24ee83c02c924c3dfb
 **Vichara Logs** is a curated collection of thoughts, experiments, and documented practices centered around learning and inquiry. It moves from reflection (**Vi-Chintan**), to exploration (**Vi-Prayoga**), to structured documentation (**Vi-Reports**), capturing the full journey of thinking and doing.
 
 ---
@@ -29,9 +32,5 @@ A space dedicated to exploring teaching and learning through ideas, experiments,
 
 ## Vi-Reports
 
-Detailed accounts of our research, implementations, and lived experiences in educational settings. These 2–3 page reports document processes, outcomes, and reflections with clarity and depth. They serve as both records of practice and resources for others seeking to build or adapt similar work.
-
-**Read the articles here:**  
-*Coming soon*
 
 ---
