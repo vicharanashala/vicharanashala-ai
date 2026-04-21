@@ -1,18 +1,18 @@
 ---
 layout: page
 title: Contact
+parent: Others
 permalink: /contact/
 ---
 
-## Contact
-
-### Address
-VLED, Super Academic Block  
+## Address
+VLED(Vicharanashala Lab for Education Design)   
+Lab No. - C-101, Super Academic Block  
 Indian Institute of Technology, Ropar  
 Rupnagar, Punjab 140001  
 
-### Email
+## Email
 vled@iitrpr.ac.in  
 
-### Phone
+## Phone
 +91-1881-242175
