@@ -6,7 +6,7 @@ parent: Products
 permalink: /Vi-Notes/
 ---
 
-# Vi-Notes: Authenticity Verification Platform for Human-Written Content
+*Authenticity Verification Platform for Human-Written Content*
 
 ## Overview
 
