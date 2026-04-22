@@ -3,7 +3,6 @@ layout: page
 title: HP Dashboard
 page_title: HP Dashboard - Gamified Learning with LTI
 parent: Products
-permalink: /hp-dashboard-lti/
 ---
 
 *Where progress is visible and learning stays accountable,*  

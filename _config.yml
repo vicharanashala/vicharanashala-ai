@@ -5,21 +5,19 @@ theme: minima
 url: "https://vicharanashala.github.io"
 baseurl: "/vicharanashala-ai"
 
+collections:
+  projects:
+    output: true
+    permalink: /projects/:slug/
+
 header_pages:
   - ourstory.md
-  - research.md
-  - vichara_logs.md
+  - products.md
   - lab_initiatives.md
   - national_initiatives.md
-  - vibe.md
-  - spandan.md
-  - vi-slides.md
-  - pes.md
-  - hp-dashboard-lti.md
-  - Vi-Notes.md
+  - vichara_logs.md
   - contact.md
   - team-members.md
-  - Vi-Sakha.md
 
 plugins:
   - jekyll-feed
