@@ -3,7 +3,6 @@ layout: page
 title: Vi-Slides
 page_title: Vi-SlideS - A Question-Driven, AI-Assisted Teaching Support System
 parent: Products
-permalink: /vi-slides/
 ---
 
 *Where curiosity leads and teaching follows,*  

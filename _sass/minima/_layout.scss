@@ -116,6 +116,10 @@
 
   .dropdown:hover .dropbtn {
     color: $brand-color;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    padding: 5px 8px;
+    margin-left: -8px;
   }
 
   @include media-query($on-palm) {

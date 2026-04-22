@@ -26,6 +26,13 @@
               {%- endunless -%}
             {%- endif -%}
           {%- endfor -%}
+          {%- for col_item in site.projects -%}
+            {%- if col_item.parent -%}
+              {%- unless all_parents contains col_item.parent -%}
+                {%- assign all_parents = all_parents | append: col_item.parent | append: "," -%}
+              {%- endunless -%}
+            {%- endif -%}
+          {%- endfor -%}
           {%- assign parent_list = all_parents | split: "," -%}
 
           {%- for path in page_paths -%}
@@ -38,30 +45,64 @@
                     {%- assign is_parent = true -%}
                   {%- endif -%}
                 {%- endfor -%}
-                {%- unless is_parent -%}
+                {%- if is_parent -%}
+                  {%- assign child_pages = site.pages | where: "parent", my_page.title -%}
+                  {%- assign child_projects = site.projects | where: "parent", my_page.title -%}
+                  {%- assign all_children = child_pages | concat: child_projects -%}
+                  {%- if all_children.size > 0 -%}
+                  <div class="dropdown">
+                    <input type="checkbox" id="dropdown-trigger-{{ my_page.title | slugify }}" class="dropdown-trigger" />
+                    <a href="{{ my_page.url | relative_url }}" class="dropbtn">{{ my_page.title | escape }}</a>
+                    <div class="dropdown-content">
+                      {%- for child_page in child_pages -%}
+                        <a href="{{ child_page.url | relative_url }}">{{ child_page.title | escape }}</a>
+                      {%- endfor -%}
+                      {%- for col_item in child_projects -%}
+                        <a href="{{ col_item.url | relative_url }}">{{ col_item.title | escape }}</a>
+                      {%- endfor -%}
+                    </div>
+                  </div>
+                  {%- endif -%}
+                {%- else -%}
                   <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-                {%- endunless -%}
+                {%- endif -%}
               {%- endunless -%}
             {%- endif -%}
           {%- endfor -%}
           
+          {%- assign processed_parents = "" -%}
+          {%- for path in page_paths -%}
+            {%- assign check_page = site.pages | where: "path", path | first -%}
+            {%- if check_page.title -%}
+              {%- for parent in parent_list -%}
+                {%- if parent == check_page.title -%}
+                  {%- assign processed_parents = processed_parents | append: parent | append: "," -%}
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endif -%}
+          {%- endfor -%}
+
           {%- for parent in parent_list -%}
             {%- if parent != "" -%}
-              {%- assign child_pages = site.pages | where: "parent", parent -%}
-              {%- if child_pages.size > 0 -%}
-              <div class="dropdown">
-                <input type="checkbox" id="dropdown-trigger-{{ parent | slugify }}" class="dropdown-trigger" />
-                <label for="dropdown-trigger-{{ parent | slugify }}" class="dropbtn">{{ parent }}</label>
-                <div class="dropdown-content">
-                  {%- for path in page_paths -%}
-                    {%- assign child_page = site.pages | where: "path", path | first -%}
-                    {%- if child_page.parent == parent -%}
+              {%- unless processed_parents contains parent -%}
+                {%- assign child_pages = site.pages | where: "parent", parent -%}
+                {%- assign child_projects = site.projects | where: "parent", parent -%}
+                {%- assign all_children = child_pages | concat: child_projects -%}
+                {%- if all_children.size > 0 -%}
+                <div class="dropdown">
+                  <input type="checkbox" id="dropdown-trigger-{{ parent | slugify }}" class="dropdown-trigger" />
+                  <label for="dropdown-trigger-{{ parent | slugify }}" class="dropbtn">{{ parent | escape }}</label>
+                  <div class="dropdown-content">
+                    {%- for child_page in child_pages -%}
                       <a href="{{ child_page.url | relative_url }}">{{ child_page.title | escape }}</a>
-                    {%- endif -%}
-                  {%- endfor -%}
+                    {%- endfor -%}
+                    {%- for col_item in child_projects -%}
+                      <a href="{{ col_item.url | relative_url }}">{{ col_item.title | escape }}</a>
+                    {%- endfor -%}
+                  </div>
                 </div>
-              </div>
-              {%- endif -%}
+                {%- endif -%}
+              {%- endunless -%}
             {%- endif -%}
           {%- endfor -%}
         </div>
