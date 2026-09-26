@@ -48,4 +48,22 @@ Vicharanashala works at the intersection of pedagogy, technology, and reflective
     </div>
   </a>
 
+  <a href="{{ site.baseurl }}/initiatives/minor-in-ai/" class="initiative-card">
+    <div class="initiative-card-icon"><i class="ph ph-brain"></i></div>
+    <div class="initiative-card-body">
+      <div class="initiative-card-title">Minor in AI</div>
+      <p class="initiative-card-desc">A nine-month, 15-credit programme in Artificial Intelligence from IIT Ropar, open to anyone who has completed 12th grade — no prior coding needed. Four batches completed, from Python foundations to deep learning, LLMs and computer vision. Currently offered to university students.</p>
+      <span class="initiative-card-link">Explore Minor in AI →</span>
+    </div>
+  </a>
+
+  <a href="{{ site.baseurl }}/initiatives/coders-high/" class="initiative-card">
+    <div class="initiative-card-icon"><i class="ph ph-lightbulb"></i></div>
+    <div class="initiative-card-body">
+      <div class="initiative-card-title">Coder's High</div>
+      <p class="initiative-card-desc">A community that thinks through problems together — without books, websites, or ready-made solutions, and without technical terms. Reasoning from first principles, it does not move forward until everyone understands.</p>
+      <span class="initiative-card-link">Explore Coder's High →</span>
+    </div>
+  </a>
+
 </div>
